@@ -23,4 +23,4 @@ def fetch_dataset():
 
     return breast_cancer_wisconsin_diagnostic
 
-fetch_dataset()
+#fetch_dataset()
