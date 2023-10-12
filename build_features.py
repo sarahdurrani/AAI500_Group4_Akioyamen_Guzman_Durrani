@@ -169,9 +169,12 @@ def LogisticRegression(X_train, y_train, X_test, y_test, epochs=3000, lr=0.01):
 all_param_dict = LogisticRegression(X_train, y_train, X_test, y_test, epochs=3000, lr=0.005)
 
 # graph plotting
-test_loss = all_param_dict['costs']
-plt.plot(test_loss)
-plt.title("Epoch Test Loss")
-plt.ylabel('costs')
-plt.xlabel('epochs')
-plt.show()
+
+
+def Graph():
+    test_loss = all_param_dict['costs']
+    plt.plot(test_loss)
+    plt.title("Epoch Test Loss")
+    plt.ylabel('costs')
+    plt.xlabel('epochs')
+    plt.show()
